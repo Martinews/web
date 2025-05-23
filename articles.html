@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Martinews</title>
+  <link rel="stylesheet" href="Styles/style.css">
+  <link rel="icon" href="Images/Logos/logo.jpg">
+  <script defer src="Java/script.js"></script>
+</head>
+<body>
+
+  <!-- Barre de navigation -->
+  <header class="header">
+    <div id="menu-icon" class="menu-icon">
+      <div class="bar"></div><div class="bar"></div><div class="bar"></div>
+    </div>
+    <h1>Martinews</h1>
+    <select id="lang-select">
+      <option value="fr">FR</option> 
+      <option value="en">EN</option>
+    </select>
+  </header>
+
+  <!-- Menu plein écran -->
+	<nav class="fullscreen-menu" id="menu">
+  <div class="menu-content">
+    <div class="menu-row">
+      <a href="index.html" data-fr="Accueil" data-en="Home"></a>
+      <a href="dreyfus.html" data-fr="Affaire Dreyfus" data-en="Dreyfus Affair"></a>
+      <a href="articles.html">Articles</a>
+      <a href="interview.html">Interviews</a>
+    </div>
+    <div class="menu-row">
+      <a href="replay.html" data-fr="Rediffusion du JT" data-en="Watch the Broadcast Again"></a>
+      <a href="projet.html" data-fr="A propos du projet" data-en="About the Project"></a>
+      <a href="credits.html" data-fr="Mentions" data-en="Credits"></a>
+    </div>
+  </div>
+
+  <div id="close-icon" class="close-icon">
+    <div class="bar1"></div><div class="bar2"></div>
+  </div>
+
+  <footer style="margin-top: auto; text-align: center;">
+		<img src="Images/Logos/logo_martiniere.jpg" width="40" height="40">
+		<img src="Images/Logos/logo_fondation.jpg" width="40" height="40">
+		<img src="Images/Logos/logo.jpg" width="40" height="40">
+  </footer>
+</nav>
+
+  <!-- Contenu -->
+  <main class="content">
+    <h2>Articles</h2>
+  </main>
+  
+  <div class="grid-container">
+  
+	<div class="grid-item"> 
+		<a class="pdf-link"
+			data-href-fr="Articles/maison-emile-zola_FR.pdf"
+			data-href-en="Articles/maison-emile-zola_EN.pdf"
+			target="_blank">
+			<img src="Images/Articles/maison-emile-zola.jpg" alt="Image cliquable" class="left-align"/>
+			<h4 data-fr="La maison d’Emile Zola" data-en="Emile Zola's house"></h4>
+		</a>
+	</div>
+  
+	<div class="grid-item"> 
+		<a class="pdf-link"
+			data-href-fr="Articles/musée-immigration-FR.pdf"
+			data-href-en="Articles/musée-immigration-EN.pdf"
+			target="_blank">
+			<img src="Images/Articles/musée-immigration.jpg" alt="Image cliquable" class="left-align"/>
+			<h4 data-fr="Le musée national de l’histoire de l’immigration – Palais de la Porte Dorée" data-en="The National Museum of the History of Immigration – Palais de la Porte Dorée"></h4>
+		</a>
+	</div>
+  
+    <div class="grid-item"> 
+		<a class="pdf-link"
+			data-href-fr="Articles/hotel-national-invalides-FR.pdf"
+			data-href-en="Articles/hotel-national-invalides-EN.pdf"
+			target="_blank">
+			<img src="Images/Articles/hotel-national-invalides.jpg" alt="Image cliquable" class="left-align"/>
+			<h4 data-fr="L’Hôtel National des Invalides" data-en="The National Hôtel of the Invalides"></h4>
+		</a>
+	</div>
+	
+    <div class="grid-item"> 
+		<a class="pdf-link"
+			data-href-fr="Articles/mémorial-natzweiler-struthof-FR.pdf"
+			data-href-en="Articles/mémorial-natzweiler-struthof-EN.pdf"
+			target="_blank">
+			<img src="Images/Articles/mémorial-natzweiler-struthof.jpg" alt="Image cliquable" class="left-align"/>
+			<h4 data-fr="Mémorial du camp de concentration de Natzweiler-Struthof" data-en="Memorial of the Natzweiler-Struthof Concentration Camp"></h4>
+		</a>
+	</div>
+
+
+	<div class="grid-item"> 
+		<a class="pdf-link"
+			data-href-fr="Articles/mémorial-alsace-lorraine-schirmeck-FR.pdf"
+			data-href-en="Articles/mémorial-alsace-lorraine-schirmeck-EN.pdf"
+			target="_blank">
+			<img src="Images/Articles/mémorial-alsace-lorraine-schirmeck.jpg" alt="Image cliquable" class="left-align"/>
+			<h4 data-fr="Le Mémorial Alsace-Lorraine de Schirmeck" data-en="The Alsace-Moselle Memorial in Schirmeck"></h4>
+		</a>
+	</div>
+	
+  	<div class="grid-item"> 
+		<a class="pdf-link"
+			data-href-fr="Articles/cimetière-montparnasse-FR.pdf"
+			data-href-en="Articles/cimetière-montparnasse-EN.pdf"
+			target="_blank">
+			<img src="Images/Articles/cimetière-montparnasse.jpg" alt="Image cliquable" class="left-align"/>
+			<h4 data-fr="Le cimetière de Montparnasse" data-en="The Montparnasse Cemetery"></h4>
+		</a>
+	</div>
+	
+	<div class="grid-item"> 
+		<a class="pdf-link"
+			data-href-fr="Articles/mémorial-shoah-FR.pdf"
+			data-href-en="Articles/mémorial-shoah-EN.pdf"
+			target="_blank">
+			<img src="Images/Articles/mémorial-shoah.jpg" alt="Image cliquable" class="left-align"/>
+			<h4 data-fr="Le Mémorial de la Shoah" data-en="The Shoah Memorial"></h4>
+		</a>
+	</div>
+
+	<div class="grid-item"> 
+		<a class="pdf-link"
+			data-href-fr="Articles/musée-lumière-FR.pdf"
+			data-href-en="Articles/musée-lumière-EN.pdf"
+			target="_blank">
+			<img src="Images/Articles/musée-lumière.jpg" alt="Image cliquable" class="left-align"/>
+			<h4 data-fr="Le musée Lumière" data-en="The Lumière Museum"></h4>
+		</a>
+	</div>
+	
+	<div class="grid-item"> 
+		<a class="pdf-link"
+			data-href-fr="Articles/musée-imprimerie-FR.pdf"
+			data-href-en="Articles/musée-imprimerie-EN.pdf"
+			target="_blank">
+			<img src="Images/Articles/musée-imprimerie.jpg" alt="Image cliquable" class="left-align"/>
+			<h4 data-fr="Le musée de l’imprimerie et de la communication graphique de Lyon" data-en="The Museum of Printing and Graphic Communication in Lyon"></h4>
+		</a>
+	</div>
+	
+	<div class="grid-item"> 
+		<a class="pdf-link"
+			data-href-fr="Articles/château-haut-koenigsbourg-FR.pdf"
+			data-href-en="Articles/château-haut-koenigsbourg-EN.pdf"
+			target="_blank">
+			<img src="Images/Articles/château-haut-koenigsbourg.jpg" alt="Image cliquable" class="left-align"/>
+			<h4 data-fr="Le château du Haut Koenigsbourg" data-en="Haut-Koenigsbourg Castle"></h4>
+		</a>
+	</div>
+	
+	<div class="grid-item"> 
+		<a class="pdf-link"
+			data-href-fr="Articles/mulhouse-FR.pdf"
+			data-href-en="Articles/mulhouse-EN.pdf"
+			target="_blank">
+			<img src="Images/Articles/mulhouse.jpg" alt="Image cliquable" class="left-align"/>
+			<h4>Mulhouse</h4>
+		</a>
+	</div>
+	
+	<div class="grid-item"> 
+		<a class="pdf-link"
+			data-href-fr="Articles/musée-clémenceau-FR.pdf"
+			data-href-en="Articles/musée-clémenceau-EN.pdf"
+			target="_blank">
+			<img src="Images/Articles/musée-clémenceau.jpg" alt="Image cliquable" class="left-align"/>
+			<h4 data-fr="Le musée Clemenceau" data-en="The Clemenceau Museum"></h4>
+		</a>
+	</div>
+	
+	<div class="grid-item"> 
+		<a class="pdf-link"
+			data-href-fr="Articles/panthéon-FR.pdf"
+			data-href-en="Articles/panthéon-EN.pdf"
+			target="_blank">
+			<img src="Images/Articles/panthéon.jpg" alt="Image cliquable" class="left-align"/>
+			<h4 data-fr="Le Panthéon" data-en="The Panthéon"></h4>
+		</a>
+	</div>
+	
+	<div class="grid-item"> 
+		<a class="pdf-link"
+			data-href-fr="Articles/ile-cité-notre-dame-FR.pdf"
+			data-href-en="Articles/ile-cité-notre-dame-EN.pdf"
+			target="_blank">
+			<img src="Images/Articles/ile-cité-notre-dame.jpg" alt="Image cliquable" class="left-align"/>
+			<h4 data-fr="L’île de la Cité et Notre-Dame de Paris " data-en="The Île de la Cité and Notre-Dame Cathedral of Paris"></h4>
+		</a>
+	</div>
+	
+	<div class="grid-item"> 
+		<a class="pdf-link"
+			data-href-fr="Articles/citadelle-bellefort-FR.pdf"
+			data-href-en="Articles/citadelle-bellefort-EN.pdf"
+			target="_blank">
+			<img src="Images/Articles/citadelle-bellefort.jpg" alt="Image cliquable" class="left-align"/>
+			<h4 data-fr="La citadelle de Belfort" data-en="The Belfort Citadel"></h4>
+		</a>
+	</div>
+	
+	<div class="grid-item"> 
+		<a class="pdf-link"
+			data-href-fr="Articles/lyon-musée-gadagne-FR.pdf"
+			data-href-en="Articles/lyon-musée-gadagne-EN.pdf"
+			target="_blank">
+			<img src="Images/Articles/lyon-musée-gadagne.jpg" alt="Image cliquable" class="left-align"/>
+			<h4 data-fr="Lyon, balade urbaine et musée Gadagne" data-en="Lyon, Urban Walk and Gadagne Museum"></h4>
+		</a>
+	</div>
+	
+	<div class="grid-item"> 
+		<a class="pdf-link"
+			data-href-fr="Articles/cité-du-train-FR.pdf"
+			data-href-en="Articles/cité-du-train-EN.pdf"
+			target="_blank">
+			<img src="Images/Articles/cité-du-train.jpg" alt="Image cliquable" class="left-align"/>
+			<h4 data-fr="La Cité du train - Patrimoine SNCF" data-en="The Train City – SNCF Heritage Museum"></h4>
+		</a>
+	</div>
+	
+	<div class="grid-item"> 
+		<a class="pdf-link"
+			data-href-fr="Articles/musée-art-histoire-judaisme-FR.pdf"
+			data-href-en="Articles/musée-art-histoire-judaisme-EN.pdf"
+			target="_blank">
+			<img src="Images/Articles/musée-art-histoire-judaisme.jpg" alt="Image cliquable" class="left-align"/>
+			<h4 data-fr="Le musée d’art et d’histoire du judaïsme" data-en="The Museum of Art and History of Judaism"></h4>
+		</a>
+	</div>
+	
+	<div class="grid-item"> 
+		<a class="pdf-link"
+			data-href-fr="Articles/mont-valérien-FR.pdf"
+			data-href-en="Articles/mont-valérien-EN.pdf"
+			target="_blank">
+			<img src="Images/Articles/mont-valérien.jpg" alt="Image cliquable" class="left-align"/>
+			<h4 data-fr="Le mont Valérien" data-en="Mount Valérien"></h4>
+		</a>
+	</div>
+	
+	<div class="grid-item"> 
+		<a class="pdf-link"
+			data-href-fr="Articles/musée-préfecture-police-paris-FR.pdf"
+			data-href-en="Articles/musée-préfecture-police-paris-EN.pdf"
+			target="_blank">
+			<img src="Images/Articles/musée-préfecture-police-paris.jpg" alt="Image cliquable" class="left-align"/>
+			<h4 data-fr="Le musée de la préfecture de police de Paris" data-en="The Paris Police Prefecture Museum"></h4>
+		</a>
+	</div>
+
+	</div>
+
+  <!-- Footer -->
+	<footer class="footer">
+		<img src="Images/Logos/logo.jpg" width="20" height="20">
+		<p style="margin: 0;">Martinews - Lycée La Martinière Duchère 2025</p>
+		<img src="Images/Logos/logo_martiniere.jpg" width="20" height="20"/>
+		<img src="Images/Logos/logo_fondation.jpg" width="20" height="20"/>
+	</footer>
+
+</body>
+</html>
