@@ -389,6 +389,43 @@ a.pdf-link {
 
 /* CREDITS */
 
+.credits {
+	max-width: 900px;
+	margin: 0 auto 3rem;
+	margin-top: 30px;
+	background: white;
+	padding: 2rem;
+	border-radius: 8px;
+	box-shadow: 0 0 10px rgb(0 0 0 / 0.1);
+	font-family: 'Segoe UI', sans-serif;
+		}
+		
+.credits ul {
+	columns: 2;
+	padding-left: 1rem;
+		}
+		
+.credits ul li {
+	margin-bottom: 0.3rem;
+		}
+.teachers, .students {
+	margin-bottom: 1.5rem;
+		}
+		
+.credits ul {
+	columns: 3;
+	list-style-type: none;
+	padding-left: 0;
+		}
+		
+.students ul li {
+	margin-bottom: 0.3rem;
+		}
+		
+.bibliography {
+	columns: 1;
+		}
+
 
 /* REPORTAGES */
 main.gallery {
