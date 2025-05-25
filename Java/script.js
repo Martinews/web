@@ -46,3 +46,5 @@ function toggleTranscription() {
     transcription.style.display = 'none';
   }
 }
+
+

@@ -71,6 +71,8 @@ body {
   z-index: 2000;
   text-align: center;
   padding: 20px;
+  
+  overflow-y: auto;
 }
 
 
@@ -78,12 +80,6 @@ body {
   display: flex;
 }
 
-.fullscreen-menu a {
-  color: white;
-  font-size: 24px;
-  margin: 15px 0;
-  text-decoration: none;
-}
 
 .close-icon {
   position: absolute;
@@ -132,15 +128,25 @@ body {
   border-radius: 5px;
 }
 
-/* Adaptation sur petit écran */
+
 @media (max-width: 480px) {
   .menu-row {
     flex-direction: column;
     align-items: center;
+    gap: 15px;
   }
 
   .fullscreen-menu a {
-    font-size: 20px;
+    font-size: 18px;
+    padding: 8px 12px;
+  }
+
+  .menu-content {
+    gap: 20px;
+  }
+
+  footer {
+    margin-top: 40px;
   }
 }
 
@@ -383,43 +389,6 @@ a.pdf-link {
 
 /* CREDITS */
 
-.credits {
-	max-width: 900px;
-	margin: 0 auto 3rem;
-	margin-top: 30px;
-	background: white;
-	padding: 2rem;
-	border-radius: 8px;
-	box-shadow: 0 0 10px rgb(0 0 0 / 0.1);
-	font-family: 'Segoe UI', sans-serif;
-		}
-		
-.credits ul {
-	columns: 2;
-	padding-left: 1rem;
-		}
-		
-.credits ul li {
-	margin-bottom: 0.3rem;
-		}
-.teachers, .students {
-	margin-bottom: 1.5rem;
-		}
-		
-.credits ul {
-	columns: 3;
-	list-style-type: none;
-	padding-left: 0;
-		}
-		
-.students ul li {
-	margin-bottom: 0.3rem;
-		}
-		
-.bibliography {
-	columns: 1;
-		}
-
 
 /* REPORTAGES */
 main.gallery {
@@ -433,13 +402,12 @@ main.gallery {
   box-sizing: border-box;
 }
 
-/* Pour les petits écrans (téléphones) : centrage horizontal avec max-width */
 @media (max-width: 480px) {
   main.gallery {
-    max-width: 320px; /* limite la largeur à environ la taille écran téléphone */
+    max-width: 320px;
     margin-left: auto;
     margin-right: auto;
-    grid-template-columns: 1fr; /* une seule colonne */
+    grid-template-columns: 1fr;
   }
 }
 
@@ -563,3 +531,5 @@ button.transcription:hover {
   border-top: 1px solid #ccc;
   padding-top: 20px;
 }
+
+
