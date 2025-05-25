@@ -2,49 +2,57 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Martinews - Parcours de mémoire</title>
+  <title>Martinews</title>
   <link rel="stylesheet" href="Styles/style.css">
   <link rel="icon" href="Images/Logos/logo.jpg">
   <script defer src="Java/script.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
+
+
+  <!-- Barre de navigation -->
   <header class="header">
     <div id="menu-icon" class="menu-icon">
       <div class="bar"></div><div class="bar"></div><div class="bar"></div>
     </div>
     <h1>Martinews</h1>
     <select id="lang-select">
-      <option value="fr">FR</option>
+      <option value="fr">FR</option> 
       <option value="en">EN</option>
     </select>
   </header>
 
-  <nav class="fullscreen-menu" id="menu">
-    <div class="menu-content">
-      <div class="menu-row">
-        <a href="index.html" data-fr="Accueil" data-en="Home"></a>
-        <a href="dreyfus.html" data-fr="Affaire Dreyfus" data-en="Dreyfus Affair"></a>
-        <a href="articles.html" data-fr="Articles" data-en="Articles"></a>
-        <a href="interview.html" data-fr="Interviews" data-en="Interviews"></a>
-      </div>
-      <div class="menu-row">
-        <a href="reportages.html" data-fr="Reportages" data-en="Reports"></a>
-        <a href="replay.html" data-fr="Rediffusion du JT" data-en="Broadcast Replay"></a>
-        <a href="projet.html" data-fr="À propos du projet" data-en="About the Project"></a>
-      </div>
-      <div class="menu-row">
-        <a href="credits.html" data-fr="Mentions" data-en="Credits"></a>
-      </div>
+  <!-- Menu plein écran -->
+	<nav class="fullscreen-menu" id="menu">
+<div class="menu-content">
+	<div class="menu-row">
+		<a href="index.html" data-fr="Accueil" data-en="Home"></a>
+		<a href="dreyfus.html" data-fr="Affaire Dreyfus" data-en="Dreyfus Affair"></a>
+		<a href="articles.html">Articles</a>
+		<a href="interview.html">Interviews</a>
     </div>
-    <div id="close-icon" class="close-icon">
-      <div class="bar1"></div><div class="bar2"></div>
+    <div class="menu-row">
+		<a href="reportages.html" data-fr="Reportages" data-en="Reports"></a>
+		<a href="podcast.html">Podcast</a>
+		<a href="replay.html" data-fr="Rediffusion du JT" data-en="Watch the Broadcast Again"></a>
+		<a href="projet.html" data-fr="A propos du projet" data-en="About the Project"></a>
     </div>
-    <footer style="margin-top: auto; text-align: center;">
-      <img src="Images/Logos/logo_martiniere.jpg" width="40" height="40">
-      <img src="Images/Logos/logo_fondation.jpg" width="40" height="40">
-      <img src="Images/Logos/logo.jpg" width="40" height="40">
-    </footer>
-  </nav>
+    <div class="menu-row">
+		<a href="credits.html" data-fr="Mentions" data-en="Credits"></a>
+    </div>
+</div>
+
+  <div id="close-icon" class="close-icon">
+    <div class="bar1"></div><div class="bar2"></div>
+  </div>
+
+  <footer style="margin-top: auto; text-align: center;">
+		<img src="Images/Logos/logo_martiniere.jpg" width="40" height="40">
+		<img src="Images/Logos/logo_fondation.jpg" width="40" height="40">
+		<img src="Images/Logos/logo.jpg" width="40" height="40">
+  </footer>
+</nav>
 
 <main class="gallery" style="margin-top: 40px; min-height: calc(100vh - 120px); align-items: center; justify-content: center; flex-wrap: wrap;">
     <div class="video-card">

@@ -36,3 +36,13 @@ document.addEventListener("DOMContentLoaded", function () {
   langSelect.value = savedLang;  // Met à jour la sélection
   setLanguage(savedLang);
 });
+
+// Transcription
+function toggleTranscription() {
+  const transcription = document.getElementById('transcription');
+  if (transcription.style.display === 'none' || transcription.style.display === '') {
+    transcription.style.display = 'block';
+  } else {
+    transcription.style.display = 'none';
+  }
+}

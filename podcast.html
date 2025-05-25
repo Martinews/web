@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Martinews</title>
+  <link rel="stylesheet" href="Styles/style.css">
+  <link rel="icon" href="Images/Logos/logo.jpg">
+  <script defer src="Java/script.js"></script>
+</head>
+<body>
+
+  <!-- Barre de navigation -->
+  <header class="header">
+    <div id="menu-icon" class="menu-icon">
+      <div class="bar"></div><div class="bar"></div><div class="bar"></div>
+    </div>
+    <h1>Martinews</h1>
+    <select id="lang-select">
+      <option value="fr">FR</option> 
+      <option value="en">EN</option>
+    </select>
+  </header>
+
+  <!-- Menu plein écran -->
+	<nav class="fullscreen-menu" id="menu">
+<div class="menu-content">
+	<div class="menu-row">
+		<a href="index.html" data-fr="Accueil" data-en="Home"></a>
+		<a href="dreyfus.html" data-fr="Affaire Dreyfus" data-en="Dreyfus Affair"></a>
+		<a href="articles.html">Articles</a>
+		<a href="interview.html">Interviews</a>
+    </div>
+    <div class="menu-row">
+		<a href="reportages.html" data-fr="Reportages" data-en="Reports"></a>
+		<a href="podcast.html">Podcast</a>
+		<a href="replay.html" data-fr="Rediffusion du JT" data-en="Watch the Broadcast Again"></a>
+		<a href="projet.html" data-fr="A propos du projet" data-en="About the Project"></a>
+    </div>
+    <div class="menu-row">
+		<a href="credits.html" data-fr="Mentions" data-en="Credits"></a>
+    </div>
+</div>
+
+  <div id="close-icon" class="close-icon">
+    <div class="bar1"></div><div class="bar2"></div>
+  </div>
+
+  <footer style="margin-top: auto; text-align: center;">
+		<img src="Images/Logos/logo_martiniere.jpg" width="40" height="40">
+		<img src="Images/Logos/logo_fondation.jpg" width="40" height="40">
+		<img src="Images/Logos/logo.jpg" width="40" height="40">
+  </footer>
+</nav>
+
+  <!-- Contenu -->
+  
+    <h1 style="margin-top: 60px;" class="podcast">Podcast</h1>
+
+  <main class="podcast_titre">
+    <section class="podcast-container">
+      <img src="Images/podcast.jpg" alt="Podcast micro" class="podcast-image">
+
+      <div class="podcast-player">
+        <h2 data-fr="L’attitude du gouvernement allemand suite à l'affaire Dreyfus" data-en="The Attitude of the German Government Following the Dreyfus Affair"></h2>
+        <p data-fr="Dans ce Podcast, Emmanuel décrypte la position du gouvernement allemand pendant l’affaire Dreyfus." data-en="In this podcast, Emmanuel analyzes the position of the German government during the Dreyfus Affair."></p>
+
+        <audio controls>
+          <source src="Audio/podcast.mp3" type="audio/mpeg">
+          Votre navigateur ne supporte pas la lecture audio.
+        </audio>
+      </div>
+	
+	 <button onclick="toggleTranscription()" class="transcription" data-fr="Lire la transcription" data-en="Read the transcript"></button>
+
+    <div id="transcription">
+		<h2 data-fr="Transcription du podcast" data-en="Podcast Transcript"></h2>
+		<p data-fr="Emmanuel, vous êtes notre correspondant à Berlin. Pouvez-vous résumer rapidement l’attitude du gouvernement allemand quant à l’affaire ?" data-en="Emmanuel, you are our correspondent in Berlin. Can you briefly summarize the attitude of the German government regarding the affair?"></p>
+		<p data-fr="En octobre 1894, l’ambassadeur allemand, le comte de Münster, pas du tout au courant de l’affaire, se plaint auprès du Quai d’Orsay suite à la publication du Matin, évoquant la trahison du secret militaire en faveur de l’Allemagne. La situation s'aggrave quand la condamnation de Dreyfus suscite une vague de germanophobie." data-en="In October 1894, the German ambassador, Count Münster, completely unaware of the affair, complained to the French Foreign Ministry following the publication in *Le Matin*, which mentioned the betrayal of military secrets in favor of Germany. The situation worsened when Dreyfus’s conviction triggered a wave of Germanophobia."></p>
+		<p data-fr="Oui, mais l'apaisement vient quand le président du Conseil Dupuy, qui exerce l'intérim des Affaires étrangères en l'absence de Gabriel Hanotaux, tombé malade justement à cause des répercussions de l'affaire, reçoit Münster en janvier 1895." data-en="Yes, but calm was restored when Prime Minister Dupuy, temporarily in charge of Foreign Affairs during Gabriel Hanotaux’s illness—caused precisely by the affair’s diplomatic consequences—received Münster in January 1895."></p>
+		<p data-fr="Il lui livre alors une vérité crue acceptée par le gouvernement sans incriminer l'Allemagne." data-en="He then shared a blunt truth, acknowledged by the government, without incriminating Germany."></p>
+		<p data-fr="De 1895 à 1897, l'affaire n'est plus abordée, et Berlin prend ses distances avec Schwarzkoppen, qui venait de découvrir que l’auteur du bordereau était bien Esterhazy." data-en="From 1895 to 1897, the affair was no longer discussed, and Berlin distanced itself from Schwarzkoppen, who had just discovered that the author of the bordereau was indeed Esterhazy."></p>
+		<p data-fr="L’Allemagne aurait-elle pu innocenter Dreyfus ? Bien sûr, d’autant que Guillaume II avait annoté sur un ouvrage en faveur de Dreyfus écrit par Bernard Lazare : « C’était, et c’est toujours, mon idée. »" data-en="Could Germany have exonerated Dreyfus? Certainly, especially since Emperor Wilhelm II had annotated a pro-Dreyfus book by Bernard Lazare: 'That was—and still is—my belief.'"></p>
+		<p data-fr="Mais à l’approche du procès Zola, le 24 janvier 1898, le ministre des Affaires étrangères von Bülow résume sa position : « Dans l’affaire Dreyfus, notre intérêt principal est de rester autant que possible en dehors. »" data-en="But as the Zola trial approached on January 24, 1898, Foreign Minister von Bülow summed up his stance: 'In the Dreyfus Affair, our main interest is to stay out of it as much as possible.'"></p>
+		<p data-fr="Non possumus, comme on dit en latin. Berlin a par exemple toujours refusé que Schwarzkoppen témoigne au procès de Rennes." data-en="Non possumus, as the Latin saying goes. Berlin, for example, consistently refused to allow Schwarzkoppen to testify at the Rennes trial."></p>
+		<p data-fr="Pourquoi ? Parce qu’une victoire des anti-révisionnistes pourrait conduire à une dictature et à une guerre contre l’Allemagne." data-en="Why? Because a victory for the anti-revisionists could lead to a dictatorship and war against Germany."></p>
+		<p data-fr="Et une réhabilitation éclatante de Dreyfus, au contraire, aurait permis à la France de regagner les sympathies libérales des Juifs d’Europe." data-en="On the other hand, a triumphant rehabilitation of Dreyfus would have allowed France to regain the liberal sympathies of European Jews."></p>
+		<p data-fr="Le mieux était donc, pour l’Allemagne, que l’affaire continue à s’envenimer, désagrège l’armée française et scandalise l’Europe." data-en="So, for Germany, the best outcome was for the affair to keep festering, further weakening the French army and scandalizing Europe."></p>
+		<p data-fr="Ce qui était d’un cynisme total, car l’Allemagne savait très bien qu’une guerre de revanche n’était pas envisagée côté français." data-en="This was utterly cynical, as Germany was fully aware that a war of revenge was not being considered by the French."></p>
+		<p data-fr="Merci Emmanuel d’avoir donné de votre temps pour ce podcast." data-en="Thank you, Emmanuel, for taking the time to join this podcast."></p>
+    </div>
+  </main>
+  
+  </section>
+
+  <script>
+
+  </script>
+  </main>
+  
+    <!-- Footer -->
+	<footer class="footer">
+		<img src="images/logos/logo.jpg" width="20" height="20">
+		<p style="margin: 0;">Martinews - Lycée La Martinière Duchère 2025</p>
+		<img src="Images/Logos/logo_martiniere.jpg" width="20" height="20"/>
+		<img src="Images/Logos/logo_fondation.jpg" width="20" height="20"/>
+	</footer>
+
+</body>
+</html>
