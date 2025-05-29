@@ -16,6 +16,7 @@ function setLanguage(lang) {
   var elements = document.querySelectorAll("[data-fr]");
   for (var i = 0; i < elements.length; i++) {
     elements[i].textContent = elements[i].getAttribute("data-" + lang);
+	
   }
 
   var links = document.querySelectorAll("[data-href-fr]");

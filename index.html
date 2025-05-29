@@ -8,7 +8,7 @@
   <script defer src="Java/script.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-<body>
+<body class="accueil">
 
 
   <!-- Barre de navigation -->
@@ -22,6 +22,18 @@
       <option value="en">EN</option>
     </select>
   </header>
+
+  <nav class="top-nav">
+    <a href="index.html" data-fr="Accueil" data-en="Home"></a>
+    <a href="dreyfus.html" data-fr="Affaire Dreyfus" data-en="Dreyfus Affair"></a>
+    <a href="articles.html">Articles</a>
+    <a href="interview.html">Interviews</a>
+    <a href="reportages.html" data-fr="Reportages" data-en="Reports"></a>
+    <a href="podcast.html">Podcast</a>
+    <a href="replay.html" data-fr="Rediffusion du JT" data-en="Broadcast Replay"></a>
+    <a href="projet.html" data-fr="À propos du projet" data-en="About the Project"></a>
+	<a href="credits.html" data-fr="Mentions" data-en="Credits"></a>
+  </nav>
 
   <!-- Menu plein écran -->
 	<nav class="fullscreen-menu" id="menu">
@@ -54,15 +66,16 @@
   </footer>
 </nav>
 
-  <!-- Contenu -->
+<!-- Contenu -->
 <main class="content">
-  <section class="hero-tv">
+  <section class="hero-tv" style="margin-top: 60px;">
     <div class="hero-overlay">
 		<h1 data-fr="Bienvenue sur Martinews" data-en="Welcome to Martinews"></h1>
 		<p data-fr="Découvrez ici le résultat des efforts d͏es élèves de première d͏u lycée La Ma͏rtinièr͏e Duchère liés à l͏'Affaire͏ Dreyfus. Ce site ͏rassemble des articles, des vid͏éos,͏ des reportages et des interviews ͏qui re͏tr͏acent ͏les événements, les lieux et les i͏mpacts de͏ cette affaire ͏historiqu͏e." 
 		data-en="Discover here the result of the efforts of students from La Martinière Duchère high school related to the Dreyfus Affair. This site brings together articles, videos, reports, and interviews that retrace the events, places, and impacts of this historical case.">
 		</p>
     </div>
+	<h1 data-fr="A la une" data-en="Front-page" style="margin-top: 30px;"></h1>
   </section>
 
 <div class="grid-container2">
@@ -97,10 +110,11 @@
 	
 	<div class="grid-item"> 
 		<a href="replay.html" class="pdf-link">
-			<img src="Images/Index/JT.jpg" alt="Image cliquable" class="left-align"/>
+			<img src="Images/JT.jpg" alt="Image cliquable" class="left-align"/>
 			<h4 data-fr="Revoir le JT" data-en="Watch the Broadcast Again"></h4>
 		</a>
 	</div>
+	
   
 
 	</div>
@@ -116,3 +130,5 @@
 
 </body>
 </html>
+
+ 
